@@ -30,6 +30,8 @@ import 'package:ghost_accountant/features/enterprise/collaboration/presentation/
 import 'package:ghost_accountant/features/enterprise/reporting/presentation/reports_screen.dart';
 import 'package:ghost_accountant/features/enterprise/api/presentation/api_management_screen.dart';
 import 'package:ghost_accountant/features/enterprise/white_label/presentation/white_label_screen.dart';
+import 'package:ghost_accountant/features/advisors/presentation/advisor_marketplace_screen.dart';
+import 'package:ghost_accountant/features/community/presentation/community_insights_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/auth',
@@ -157,6 +159,14 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/white-label',
       builder: (context, state) => const WhiteLabelScreen(),
+    ),
+    GoRoute(
+      path: '/advisors',
+      builder: (context, state) => const AdvisorMarketplaceScreen(),
+    ),
+    GoRoute(
+      path: '/community',
+      builder: (context, state) => const CommunityInsightsScreen(),
     ),
   ],
 );
