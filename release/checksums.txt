@@ -1,0 +1,1 @@
+ff65b9ee40e3773d402cba294b5e3b04010d53ff1ebe6a7f0b1894661b688964  release/ghost-accountant-v1.0.0-android.apk

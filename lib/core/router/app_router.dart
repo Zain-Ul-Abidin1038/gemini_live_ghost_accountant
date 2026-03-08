@@ -1,0 +1,92 @@
+import 'package:go_router/go_router.dart';
+import 'package:ghost_accountant/features/home/presentation/home_screen.dart';
+import 'package:ghost_accountant/features/receipts/presentation/camera_screen.dart';
+import 'package:ghost_accountant/features/voice/presentation/voice_screen.dart';
+import 'package:ghost_accountant/features/location/presentation/location_screen.dart';
+import 'package:ghost_accountant/features/calendar/presentation/calendar_screen.dart';
+import 'package:ghost_accountant/features/chat/presentation/intelligent_chat_screen.dart';
+import 'package:ghost_accountant/features/auth/presentation/glassmorphic_auth_screen.dart';
+import 'package:ghost_accountant/features/analytics/presentation/analytics_screen.dart';
+import 'package:ghost_accountant/features/profile/presentation/profile_screen.dart';
+import 'package:ghost_accountant/features/profile/presentation/edit_profile_screen.dart';
+import 'package:ghost_accountant/features/gemini_test/presentation/gemini_test_screen.dart';
+import 'package:ghost_accountant/features/marathon/presentation/marathon_screen.dart';
+import 'package:ghost_accountant/features/finance/presentation/income_screen.dart';
+import 'package:ghost_accountant/features/finance/presentation/expense_screen.dart';
+import 'package:ghost_accountant/features/finance/presentation/ledger_screen.dart';
+import 'package:ghost_accountant/features/vision_ghost/presentation/vision_ghost_screen.dart';
+import 'package:ghost_accountant/features/ghost_navigator/presentation/ghost_navigator_screen.dart';
+
+final appRouter = GoRouter(
+  initialLocation: '/auth',
+  routes: [
+    GoRoute(
+      path: '/gemini-test',
+      builder: (context, state) => const GeminiTestScreen(),
+    ),
+    GoRoute(
+      path: '/auth',
+      builder: (context, state) => const GlassmorphicAuthScreen(),
+    ),
+    GoRoute(
+      path: '/',
+      builder: (context, state) => const HomeScreen(),
+    ),
+    GoRoute(
+      path: '/camera',
+      builder: (context, state) => const CameraScreen(),
+    ),
+    GoRoute(
+      path: '/voice',
+      builder: (context, state) => const VoiceScreen(),
+    ),
+    GoRoute(
+      path: '/location',
+      builder: (context, state) => const LocationScreen(),
+    ),
+    GoRoute(
+      path: '/calendar',
+      builder: (context, state) => const CalendarScreen(),
+    ),
+    GoRoute(
+      path: '/chat',
+      builder: (context, state) => const IntelligentChatScreen(),
+    ),
+    GoRoute(
+      path: '/analytics',
+      builder: (context, state) => const AnalyticsScreen(),
+    ),
+    GoRoute(
+      path: '/profile',
+      builder: (context, state) => const ProfileScreen(),
+    ),
+    GoRoute(
+      path: '/profile/edit',
+      builder: (context, state) => const EditProfileScreen(),
+    ),
+    GoRoute(
+      path: '/marathon',
+      builder: (context, state) => const MarathonScreen(),
+    ),
+    GoRoute(
+      path: '/income',
+      builder: (context, state) => const IncomeScreen(),
+    ),
+    GoRoute(
+      path: '/expense',
+      builder: (context, state) => const ExpenseScreen(),
+    ),
+    GoRoute(
+      path: '/ledger',
+      builder: (context, state) => const LedgerScreen(),
+    ),
+    GoRoute(
+      path: '/vision-ghost',
+      builder: (context, state) => const VisionGhostScreen(),
+    ),
+    GoRoute(
+      path: '/ghost-navigator',
+      builder: (context, state) => const GhostNavigatorScreen(),
+    ),
+  ],
+);
