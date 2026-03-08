@@ -25,6 +25,11 @@ import 'package:ghost_accountant/features/insurance/presentation/insurance_dashb
 import 'package:ghost_accountant/features/family/presentation/family_dashboard_screen.dart';
 import 'package:ghost_accountant/features/shared_goals/presentation/shared_goals_screen.dart';
 import 'package:ghost_accountant/features/group_expenses/presentation/group_expenses_screen.dart';
+import 'package:ghost_accountant/features/enterprise/business/presentation/business_expenses_screen.dart';
+import 'package:ghost_accountant/features/enterprise/collaboration/presentation/team_workspace_screen.dart';
+import 'package:ghost_accountant/features/enterprise/reporting/presentation/reports_screen.dart';
+import 'package:ghost_accountant/features/enterprise/api/presentation/api_management_screen.dart';
+import 'package:ghost_accountant/features/enterprise/white_label/presentation/white_label_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/auth',
@@ -132,6 +137,26 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/group-expenses',
       builder: (context, state) => const GroupExpensesScreen(),
+    ),
+    GoRoute(
+      path: '/business-expenses',
+      builder: (context, state) => const BusinessExpensesScreen(),
+    ),
+    GoRoute(
+      path: '/teams',
+      builder: (context, state) => const TeamWorkspaceScreen(),
+    ),
+    GoRoute(
+      path: '/reports',
+      builder: (context, state) => const ReportsScreen(),
+    ),
+    GoRoute(
+      path: '/api-management',
+      builder: (context, state) => const ApiManagementScreen(),
+    ),
+    GoRoute(
+      path: '/white-label',
+      builder: (context, state) => const WhiteLabelScreen(),
     ),
   ],
 );
