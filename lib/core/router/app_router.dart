@@ -19,6 +19,12 @@ import 'package:ghost_accountant/features/ghost_navigator/presentation/ghost_nav
 import 'package:ghost_accountant/features/currency/presentation/currency_converter_screen.dart';
 import 'package:ghost_accountant/features/investments/presentation/portfolio_screen.dart';
 import 'package:ghost_accountant/features/features_hub/presentation/features_hub_screen.dart';
+import 'package:ghost_accountant/features/crypto/presentation/crypto_dashboard_screen.dart';
+import 'package:ghost_accountant/features/real_estate/presentation/property_portfolio_screen.dart';
+import 'package:ghost_accountant/features/insurance/presentation/insurance_dashboard_screen.dart';
+import 'package:ghost_accountant/features/family/presentation/family_dashboard_screen.dart';
+import 'package:ghost_accountant/features/shared_goals/presentation/shared_goals_screen.dart';
+import 'package:ghost_accountant/features/group_expenses/presentation/group_expenses_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/auth',
@@ -102,6 +108,30 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/features-hub',
       builder: (context, state) => const FeaturesHubScreen(),
+    ),
+    GoRoute(
+      path: '/crypto',
+      builder: (context, state) => const CryptoDashboardScreen(),
+    ),
+    GoRoute(
+      path: '/real-estate',
+      builder: (context, state) => const PropertyPortfolioScreen(),
+    ),
+    GoRoute(
+      path: '/insurance',
+      builder: (context, state) => const InsuranceDashboardScreen(),
+    ),
+    GoRoute(
+      path: '/family',
+      builder: (context, state) => const FamilyDashboardScreen(),
+    ),
+    GoRoute(
+      path: '/shared-goals',
+      builder: (context, state) => const SharedGoalsScreen(),
+    ),
+    GoRoute(
+      path: '/group-expenses',
+      builder: (context, state) => const GroupExpensesScreen(),
     ),
   ],
 );

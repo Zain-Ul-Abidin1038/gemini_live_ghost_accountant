@@ -107,7 +107,14 @@ class FeaturesHubScreen extends StatelessWidget {
             borderColor: accentColor.withOpacity(0.3),
             child: InkWell(
               onTap: () {
-                if (feature.route == '/currency-converter' || feature.route == '/portfolio') {
+                if (feature.route == '/currency-converter' || 
+                    feature.route == '/portfolio' ||
+                    feature.route == '/crypto' ||
+                    feature.route == '/real-estate' ||
+                    feature.route == '/insurance' ||
+                    feature.route == '/family' ||
+                    feature.route == '/shared-goals' ||
+                    feature.route == '/group-expenses') {
                   context.push(feature.route);
                 } else {
                   _showComingSoonDialog(context, feature.name);
