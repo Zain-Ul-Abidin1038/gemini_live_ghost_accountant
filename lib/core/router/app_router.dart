@@ -16,6 +16,9 @@ import 'package:ghost_accountant/features/finance/presentation/expense_screen.da
 import 'package:ghost_accountant/features/finance/presentation/ledger_screen.dart';
 import 'package:ghost_accountant/features/vision_ghost/presentation/vision_ghost_screen.dart';
 import 'package:ghost_accountant/features/ghost_navigator/presentation/ghost_navigator_screen.dart';
+import 'package:ghost_accountant/features/currency/presentation/currency_converter_screen.dart';
+import 'package:ghost_accountant/features/investments/presentation/portfolio_screen.dart';
+import 'package:ghost_accountant/features/features_hub/presentation/features_hub_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/auth',
@@ -87,6 +90,18 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/ghost-navigator',
       builder: (context, state) => const GhostNavigatorScreen(),
+    ),
+    GoRoute(
+      path: '/currency-converter',
+      builder: (context, state) => const CurrencyConverterScreen(),
+    ),
+    GoRoute(
+      path: '/portfolio',
+      builder: (context, state) => const PortfolioScreen(),
+    ),
+    GoRoute(
+      path: '/features-hub',
+      builder: (context, state) => const FeaturesHubScreen(),
     ),
   ],
 );
