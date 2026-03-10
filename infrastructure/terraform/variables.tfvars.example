@@ -1,0 +1,11 @@
+# Ghost Accountant - Terraform Variables Example
+# Copy this file to variables.tfvars and fill in your values
+
+# Google Cloud Project ID
+project_id = "ghost-accountant-prod"
+
+# Google Cloud Region (co-located with Gemini API)
+region = "us-central1"
+
+# Gemini API Key (get from Google AI Studio)
+gemini_api_key = "your_gemini_api_key_here"
