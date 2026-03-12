@@ -34,6 +34,7 @@ variable "gemini_api_key" {
 provider "google" {
   project = var.project_id
   region  = var.region
+  # Use gcloud credentials
 }
 
 # Enable Required APIs
@@ -59,10 +60,6 @@ resource "google_storage_bucket" "receipts" {
   
   versioning {
     enabled = true
-  }
-  
-  encryption {
-    default_kms_key_name = null
   }
   
   lifecycle_rule {

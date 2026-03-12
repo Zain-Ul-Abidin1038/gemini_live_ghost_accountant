@@ -1,0 +1,20 @@
+==========================================
+Ghost Accountant - Automated GCP Deployment
+==========================================
+
+[0;34mChecking Google Cloud authentication...[0m
+[0;32m✓ Logged in as: zainulabiden1038@gmail.com[0m
+
+==========================================
+Step 1: Creating Project
+==========================================
+
+[0;34mCreating project ghost-accountant-prod...[0m
+[0;32m✓ Project created[0m
+Updated property [core/project].
+[0;32m✓ Active project set to ghost-accountant-prod[0m
+
+==========================================
+Step 2: Billing Check
+==========================================
+
